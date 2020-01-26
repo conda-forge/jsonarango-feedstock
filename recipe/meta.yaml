@@ -11,22 +11,21 @@ source:
 build:
   number: 0
   skip: True  # [win and vc<14]
-  skip: True  # [osx]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
     - ninja  # [win]
-    - make  # [unix]
+    - make  # [unix and osx]
   host:
     - curl
     - velocypack
 
 test:
   commands:
-    - test -d ${PREFIX}/include/jsonarango  # [unix]
-    - test -f ${PREFIX}/include/jsonarango/arangoquery.h  # [unix]
+    - test -d ${PREFIX}/include/jsonarango  # [unix and osx]
+    - test -f ${PREFIX}/include/jsonarango/arangoquery.h  # [unix and osx]
     - if exist %LIBRARY_PREFIX%\include\jsonarango\arangoquery.h (exit 0) else (exit 1)  # [win]
 
 about:
