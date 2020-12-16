@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: jsonarango
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://bitbucket.org/gems4/jsonarango/get/v{{ version }}.tar.gz
-  sha256: e2d09aa8b265902f223c42865045e07d264b2efa9f689f6222792077942472a2
+  sha256: 2e067e960d948a0d826f115f0e76933bf98f1842e3856ac24e4c88ab49e2e5f8
 
 build:
   number: 0
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -33,7 +33,7 @@ about:
   license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE
-  summary: A lightweight ArangoDB client C++ library, providing CRUD and query operations 
+  summary: A lightweight ArangoDB client C++ library, providing CRUD and query operations
   doc_url: https://bitbucket.org/gems4/jsonarango
   dev_url: https://bitbucket.org/gems4/jsonarango
 
