@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: jsonarango
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://bitbucket.org/gems4/jsonarango/get/v{{ version }}.tar.gz
-  sha256: 2e067e960d948a0d826f115f0e76933bf98f1842e3856ac24e4c88ab49e2e5f8
+  sha256: 0b559c03fcc0656856e80cfc2c20d3ef19658014b1a30000cccf1d8557f7ca73
 
 build:
   number: 0
