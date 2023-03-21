@@ -3,12 +3,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '7'
+- '8'
 cxx_compiler:
-- vs2017
-pin_run_as_build:
-  curl:
-    max_pin: x
+- vs2019
 target_platform:
 - win-64
 vc:
