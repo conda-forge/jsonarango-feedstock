@@ -5,15 +5,12 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '7'
+- '8'
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '14'
 macos_machine:
 - x86_64-apple-darwin13.4.0
-pin_run_as_build:
-  curl:
-    max_pin: x
 target_platform:
 - osx-64
