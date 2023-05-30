@@ -23,6 +23,8 @@ requirements:
     - git
     - curl
     - spdlog >=1.10.0
+    - ccache  # [unix]
+    - nlohmann_json
 
 
 test:
