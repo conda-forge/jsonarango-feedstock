@@ -19,6 +19,7 @@ requirements:
     - cmake
     - ninja  # [win]
     - make
+    - ccache  # [unix]
   host:
     - git
     - curl
