@@ -21,6 +21,7 @@ requirements:
     - make
   host:
     - curl
+    - spdlog >=1.10.0
 
 
 test:
