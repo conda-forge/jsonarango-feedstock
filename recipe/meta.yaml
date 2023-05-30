@@ -19,6 +19,7 @@ requirements:
     - cmake
     - ninja  # [win]
     - make
+    - git
   host:
     - curl
     - spdlog >=1.10.0
