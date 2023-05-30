@@ -13,6 +13,7 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX="$PREFIX" \
       -DCMAKE_INSTALL_LIBDIR=lib \
+      -DEnableSSE=OFF \
       -DBUILD_EXAMPLES=OFF \
       ..
 # Build step
