@@ -17,7 +17,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
-    - ninja  # [win]
+    - ninja
     - make
     - ccache  # [unix]
   host:
